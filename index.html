@@ -309,6 +309,84 @@
             font-size: 1.2em;
         }
         
+        /* Form Styles */
+        .lead-form {
+            max-width: 500px;
+            margin: 50px auto;
+            text-align: left;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 15px 20px;
+            border: 2px solid #e0e0e0;
+            border-radius: 12px;
+            font-size: 1em;
+            font-family: inherit;
+            transition: all 0.3s;
+            background: white;
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+        
+        .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+        
+        .form-submit {
+            width: 100%;
+            padding: 20px;
+            font-size: 1.2em;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        
+        .form-note {
+            text-align: center;
+            color: #888;
+            font-size: 0.9em;
+            margin-top: 15px;
+        }
+        
+        .popular-badge {
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        }
+        
+        .contact-alternate {
+            margin-top: 60px;
+            padding-top: 40px;
+            border-top: 1px solid #e0e0e0;
+        }
+        
+        .contact-alternate p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
         /* Contact Section */
         .contact {
             background: rgba(255, 255, 255, 0.95);
@@ -471,38 +549,74 @@
             <h2 class="blur-fade">Simple Pricing</h2>
             <div class="price-cards">
                 <div class="price-card blur-fade">
-                    <h3>Basic Audit</h3>
-                    <div class="price">$50</div>
+                    <h3>Mini Audit</h3>
+                    <div class="price">$97</div>
                     <ul>
-                        <li>System health check</li>
+                        <li>30-min consultation</li>
                         <li>5 automation opportunities</li>
+                        <li>Quick-win recommendations</li>
                         <li>PDF report</li>
                         <li>48-hour delivery</li>
                     </ul>
-                    <a href="#contact" class="cta-button">Get Started</a>
+                    <a href="#audit-form" class="cta-button">Get Started</a>
                 </div>
                 <div class="price-card featured blur-fade">
-                    <h3>Advanced Audit</h3>
-                    <div class="price">$100</div>
+                    <div class="popular-badge">Most Popular</div>
+                    <h3>Full Audit</h3>
+                    <div class="price">$297</div>
                     <ul>
-                        <li>Everything in Basic</li>
+                        <li>60-min deep-dive consultation</li>
                         <li>10+ automation opportunities</li>
-                        <li>Implementation guide</li>
+                        <li>Complete workflow analysis</li>
+                        <li>Implementation roadmap</li>
                         <li>Tool recommendations</li>
                         <li>ROI calculations</li>
+                        <li>30-day support</li>
                     </ul>
-                    <a href="#contact" class="cta-button">Get Started</a>
+                    <a href="#audit-form" class="cta-button">Get Started</a>
                 </div>
             </div>
         </div>
         
-        <!-- Contact -->
-        <div class="contact" id="contact">
-            <h2 class="blur-fade">Ready to Automate?</h2>
-            <p class="blur-fade">Get your free 5-minute audit. No commitment required.</p>
-            <div class="contact-options">
-                <a href="https://t.me/nelkk" class="contact-option blur-fade">💬 Telegram</a>
-                <a href="mailto:nelkk1990@gmail.com" class="contact-option blur-fade">📧 Email</a>
+        <!-- Lead Capture Form -->
+        <div class="contact" id="audit-form">
+            <h2 class="blur-fade">🎯 Get Your Free 5-Minute Audit</h2>
+            <p class="blur-fade">Tell me about your business and I'll identify your biggest automation opportunity. No spam, no commitment.</p>
+            
+            <form class="lead-form blur-fade" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="business" placeholder="Business Name" required>
+                </div>
+                <div class="form-group">
+                    <select name="business_type" required>
+                        <option value="">What type of business?</option>
+                        <option value="ecommerce">E-commerce Store</option>
+                        <option value="agency">Marketing Agency</option>
+                        <option value="realestate">Real Estate</option>
+                        <option value="coaching">Coaching/Consulting</option>
+                        <option value="saas">SaaS/Product</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea name="pain_point" placeholder="What's your biggest time waster? (e.g., 'I spend 3 hours/day on email')" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="cta-button form-submit">Get My Free Audit →</button>
+                <p class="form-note">⚡ You'll get a response within 24 hours</p>
+            </form>
+            
+            <div class="contact-alternate">
+                <p>Prefer to chat directly?</p>
+                <div class="contact-options">
+                    <a href="https://t.me/nelkk" class="contact-option blur-fade">💬 Telegram</a>
+                    <a href="mailto:nelkk1990@gmail.com" class="contact-option blur-fade">📧 Email</a>
+                </div>
             </div>
         </div>
         
