@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Automation Audit - Save 10+ Hours/Week</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .hero {
+            background: white;
+            border-radius: 20px;
+            padding: 60px 40px;
+            margin: 40px auto;
+            text-align: center;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            color: #667eea;
+        }
+        .hero p {
+            font-size: 1.3em;
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 18px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin: 60px 0;
+        }
+        .feature {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+        .feature h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+        }
+        .pricing {
+            background: white;
+            border-radius: 20px;
+            padding: 60px 40px;
+            margin: 40px 0;
+            text-align: center;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        .pricing h2 {
+            font-size: 2.5em;
+            margin-bottom: 40px;
+            color: #333;
+        }
+        .price-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        .price-card {
+            border: 2px solid #e0e0e0;
+            border-radius: 15px;
+            padding: 40px;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+        .price-card:hover {
+            transform: translateY(-5px);
+            border-color: #667eea;
+        }
+        .price-card.featured {
+            border-color: #667eea;
+            background: linear-gradient(135deg, #f8f9ff 0%, #f0f2ff 100%);
+        }
+        .price {
+            font-size: 3em;
+            color: #667eea;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        .price-card ul {
+            list-style: none;
+            margin: 30px 0;
+        }
+        .price-card li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .price-card li:before {
+            content: "✓ ";
+            color: #667eea;
+            font-weight: bold;
+        }
+        .contact {
+            background: white;
+            border-radius: 20px;
+            padding: 60px 40px;
+            margin: 40px 0;
+            text-align: center;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        .contact h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .contact-options {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+        .contact-option {
+            padding: 20px 40px;
+            background: #f8f9ff;
+            border-radius: 10px;
+            text-decoration: none;
+            color: #667eea;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .contact-option:hover {
+            background: #667eea;
+            color: white;
+        }
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: rgba(255,255,255,0.8);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <h1>🤖 AI Automation Audit</h1>
+            <p>Discover how to save <strong>10+ hours per week</strong> by automating repetitive tasks in your business. Get a personalized audit showing exactly where AI can work for you.</p>
+            <a href="#contact" class="cta-button">Get Your Free 5-Minute Audit</a>
+        </div>
+
+        <div class="features">
+            <div class="feature">
+                <h3>🔍 System Analysis</h3>
+                <p>We analyze your current workflows, tools, and processes to identify automation opportunities.</p>
+            </div>
+            <div class="feature">
+                <h3>⚡ Quick Wins</h3>
+                <p>Get 5-10 immediate automation recommendations that can save hours every week.</p>
+            </div>
+            <div class="feature">
+                <h3>📋 Action Plan</h3>
+                <p>Receive a detailed implementation guide with tools, costs, and step-by-step instructions.</p>
+            </div>
+        </div>
+
+        <div class="pricing">
+            <h2>Simple Pricing</h2>
+            <div class="price-cards">
+                <div class="price-card">
+                    <h3>Basic Audit</h3>
+                    <div class="price">$50</div>
+                    <ul>
+                        <li>System health check</li>
+                        <li>5 automation opportunities</li>
+                        <li>PDF report</li>
+                        <li>48-hour delivery</li>
+                    </ul>
+                    <a href="#contact" class="cta-button">Get Started</a>
+                </div>
+                <div class="price-card featured">
+                    <h3>Advanced Audit</h3>
+                    <div class="price">$100</div>
+                    <ul>
+                        <li>Everything in Basic</li>
+                        <li>10+ automation opportunities</li>
+                        <li>Implementation guide</li>
+                        <li>Tool recommendations</li>
+                        <li>ROI calculations</li>
+                    </ul>
+                    <a href="#contact" class="cta-button">Get Started</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact" id="contact">
+            <h2>Ready to Automate?</h2>
+            <p>Get your free 5-minute audit. No commitment required.</p>
+            <div class="contact-options">
+                <a href="https://t.me/nelkk" class="contact-option">💬 Telegram</a>
+                <a href="mailto:nelkk1990@gmail.com" class="contact-option">📧 Email</a>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2026 AI Automation Audit Service. Helping businesses work smarter.</p>
+        </footer>
+    </div>
+</body>
+</html>
